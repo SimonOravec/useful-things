@@ -22,14 +22,14 @@ esac
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-	color_prompt=yes
+        color_prompt=yes
     else
-	color_prompt=
+        color_prompt=
     fi
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='\[\033[38;5;14m\]\u\[$(tput sgr0)\]\[\033[38;5;25m\]@\h\[$(tput sgr0)\] [\[$(tput sgr0)\]\[\033[38;5;85m\]\w\[$(tput sgr0)\]] \[$(tput sgr0)\]\[\033[38;5;160m\]>\[$(tput sgr0)\] \[$(tput sgr0)\]'
+    PS1='\[\033[38;5;14m\]\u\[$(tput sgr0)\]\[\033[38;5;25m\]@\h\[$(tput sgr0)\] [\[$(tput sgr0)\]\[\033[38;5;85m\]\w\[$(tput sgr0)\]] \[$(tput sgr0)\]\[\033[38;5;160m\]$\[$(tput sgr0)\] \[$(tput sgr0)\]'
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
