@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#THIS SCRIPT REQUIRES 'wget' and 'ipset' installed (Tested on ipset v7.17, protocol version: 7)
+
 #Root user check
 if [ "$(id -u)" != "0" ]; then
    echo "This script must be run as root" 1>&2
