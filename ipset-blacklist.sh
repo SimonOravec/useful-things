@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#THIS SCRIPT REQUIRES 'wget' and 'ipset' installed (Tested on ipset v7.17, protocol version: 7)
+#THIS SCRIPT REQUIRES 'wget' and 'ipset' installed (Tested on GNU Wget 1.21.3 & ipset v7.17, protocol version: 7)
 
 #Root user check
 if [ "$(id -u)" != "0" ]; then
